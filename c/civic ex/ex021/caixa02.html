@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #292017;
+            margin: 0px;
+        }
+        h1{
+            box-shadow: 2px 1px 7px 0px #00000021;
+        }
+        header{
+            margin:10px auto;
+            width:  300px;
+            padding: 10px;
+            background-color: #7a6262a4;
+            text-align: center;
+        }
+        nav{
+            background-color: #a5917b;
+            padding: 3px;
+            box-shadow: 7px 6px 6px 0px #000000ad;
+
+        }
+        nav >a{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        nav>a:hover{
+            text-decoration: underline;
+        }
+        main{
+             background-color: whitesmoke;
+             padding: 10px;
+             margin: 10px;
+             border-radius: 3px 4px;
+             box-shadow: 5px 6px 14px 0px rgba(0, 0, 0, 0.473);
+        }
+        article{
+            background-color: #7a6262a4;
+        }
+        article > aside{
+            background-color: #a5917b;
+        }
+        footer{
+            background-color: black;
+            color: whitesmoke;
+            text-align: center;
+            padding: 4px;
+            margin: 0px ;
+        }
+        footer>p{
+            margin: 3px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Teu site</h1>
+        <nav><a href="#">Link</a>
+             <a href="#">Link</a>
+             <a href="#">Link</a>
+             <a href="#">Link</a>
+</nav>
+    </header>
+    <main>
+<section id="assuntos" >
+<p>Tecnologias e Esportes</p>
+</section>
+<section id="noticias">
+    <article>
+        <h2>Nóticias de primeira hora</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ipsum aperiam aliquam, eligendi eaque labore? Et distinctio accusantium adipisci soluta id doloremque aut! Eius, hic minus obcaecati architecto ratione alias!</p>
+        <aside>
+            <p>Artigo escrito por Ninguem</p>
+        </aside>
+    </article>
+    <article>
+
+    </article>
+</section>
+    </main>
+    <footer>
+<p>Desvolvido por terceiros</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

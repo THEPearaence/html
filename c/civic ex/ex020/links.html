@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        #  =  id
+        .  =  classe
+        :  =  pseudo=class
+        :: =  pseudo-element
+        >  =  clildren
+        */
+        body{
+            font-family: sans-serif;
+        }
+        a{
+            color: #333357;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: darkslategrey;
+        }
+        a:active{
+            color: brown;
+        }
+        a::before{
+            content: '☞';
+            color: #463939;
+        }
+        a::after{
+            content: '☜';
+            text-decoration: none;
+            font-weight: normal;
+            color: #463939;
+        }
+        .especial{
+            background-color: #e4525275;
+        }
+    </style>
+</head>
+<body>
+    <h1>Links personalizados</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/shorts/cchlfrD3U5s" target="_blank">Link 1</a></li>
+        <li><a href="http://pudim.com.br/" target="_blank" >Link 2</a></li>
+        <li><a href="https://pm1.aminoapps.com/7641/24185906607082065024125b8c4a415f55bb689ar1-628-350v2_uhq.jpg" target="_blank" class="especial">Link 3</a></li>
+    </ul>
+</body>
+</html>

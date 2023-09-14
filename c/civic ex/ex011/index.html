@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abri essa página em dispositivos diferente pra você ver</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/fotop.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/fotom.png" type="image/png">
+        <img src="img/fotog.png" alt="imagem flex">
+
+        <h1>Reproduzir audio</h1>
+        <!--<audio src="musica/Dreamscape.mp3" autoplay></audio>-->
+            <!--MP35 WAV OGG-->
+            <audio preload="metadata"  autoplay loop>
+            <source src="musica/Dreamscape.mp3" type="audio/mpeg">
+        <!--<source src="musica/Dreamscape.ogg" type="audio/ogg">
+            <source src="musica/Dreamscape.wav" type="audio/wav"> -->
+            <p>Seu navegador não presta! Baixe o audio <a href="musica/Dreamscape.mp3">aqui.</a></p>
+        </audio>
+        
+    </picture>
+</body>
+</html>
