@@ -14,13 +14,14 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
             font-size: 1.4em;
             font-weight: bolder;
             padding: 9px;
-            background-color: rgba(128, 128, 128, 0.356);
+            background-color: rgba(128, 128, 128, 0.555);
         }
 
         td,
@@ -29,10 +30,28 @@
             padding: 5px;
         }
 
+        thead>tr>th {
+            position: sticky;
+            top: 0;
+            background-color: grey;
+        }
+
         thead,
         tfoot {
             background-color: grey;
             color: whitesmoke;
+        }
+
+        tbody>tr:nth-child(odd) {
+            /* 2n-1 */
+            background-color: lightgrey;
+            font-weight: lighter;
+        }
+
+        tbody>tr:nth-child(even) {
+            /* 2n */
+            background-color: whitesmoke;
+            font-weight: normal;
         }
 
         td.num {
